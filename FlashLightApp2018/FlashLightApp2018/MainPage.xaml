@@ -6,9 +6,9 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button Text="On" x:Name="OnBtn" Clicked="OnBtn_Clicked"/>
+        <Button Text="Off" x:Name="OffBtn" Clicked="OffBtn_Clicked"/>
+        <Button Text="Morse" x:Name="MorseBtn" Clicked="MorseBtn_Clicked"
     </StackLayout>
   <!--test-->
 </ContentPage>
