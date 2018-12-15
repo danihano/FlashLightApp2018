@@ -57,9 +57,9 @@ namespace FlashLightApp2018
             }
         }
 
-        private void MorseBtn_Clicked(object sender, EventArgs e)
+        private async void MorseBtn_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new MorsePage());
         }
     }
 }
