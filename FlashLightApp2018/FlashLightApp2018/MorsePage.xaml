@@ -7,6 +7,19 @@
             <Label Text="Morse Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+                
+            <!--Load Morse code and Make new morse code-->
+            <Button Text="New Morse" x:Name="NewMorseBtn" Clicked="NewMorseBtn_Clicked"/>
+            <Button Text="Load Morse" x:Name="LoadMorseBtn" Clicked="LoadMorseBtn_Clicked"/>
+            
+            <!--Plase Loaded Morse Code-->
+            <Button Text="Play Morse" x:Name="PlayMorseBtn" Clicked="PlayMorseBtn_Clicked"/>
+
+            <!--Write Morse Code-->
+            <Button Text="o" x:Name="OBtn" Clicked="OBtn_Clicked" IsEnabled="False"/>
+            <Button Text="-" x:Name="LBtn" Clicked="LBtn_Clicked" IsEnabled="False"/>
+            <Button Text="/" x:Name="SBtn" Clicked="SBtn_Clicked" IsEnabled="False"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
