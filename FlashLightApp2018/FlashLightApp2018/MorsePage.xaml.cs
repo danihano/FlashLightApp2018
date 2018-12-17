@@ -9,21 +9,43 @@ using Xamarin.Forms.Xaml;
 
 namespace FlashLightApp2018
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MorsePage : ContentPage
-	{
-		public MorsePage ()
-		{
-			InitializeComponent ();
-		}
-        
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MorsePage : ContentPage
+    {
+        public MorsePage()
+        {
+            InitializeComponent();
+        }
+
         private async void NewMorseBtn_Clicked(object sender, EventArgs e)
         {
-            OBtn.IsEnabled = true;
-            LBtn.IsEnabled = true;
-            SBtn.IsEnabled = true;
+            bool isTextEmpty = String.IsNullOrEmpty(MorseName.Text);
+            if (isTextEmpty)
+            {
+
+            }
+            else
+            {
+                OBtn.IsEnabled = true;
+                LBtn.IsEnabled = true;
+                SBtn.IsEnabled = true;
+                EndBtn.IsEnabled = true;
+
+                String morseName = MorseName.Text;
+            }
 
             //File.WriteAllText(fileName, text);
+
+        }
+
+        
+        private void LoadMorseBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PlayMorseBtn_Clicked(object sender, EventArgs e)
+        {
 
         }
 
@@ -42,12 +64,7 @@ namespace FlashLightApp2018
 
         }
 
-        private void LoadMorseBtn_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PlayMorseBtn_Clicked(object sender, EventArgs e)
+        private void EndBtn_Clicked(object sender, EventArgs e)
         {
 
         }
