@@ -9,6 +9,7 @@
         <Button Text="On" x:Name="OnBtn" Clicked="OnBtn_Clicked"/>
         <Button Text="Off" x:Name="OffBtn" Clicked="OffBtn_Clicked"/>
         <Button Text="Morse" x:Name="MorseBtn" Clicked="MorseBtn_Clicked"/>
+        <Button Text="Light Strength" x:Name="LightStr" Clicked="LightStr_Clicked"/>
     </StackLayout>
   <!--test-->
 </ContentPage>

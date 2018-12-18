@@ -12,6 +12,7 @@ namespace FlashLightApp2018
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MorsePage : ContentPage
     {
+        //bool exitLoop = false;
         public MorsePage()
         {
             InitializeComponent();
@@ -31,17 +32,22 @@ namespace FlashLightApp2018
                 SBtn.IsEnabled = true;
                 EndBtn.IsEnabled = true;
 
-                String morseName = MorseName.Text;
-            }
+               // String morseName = MorseName.Text;
 
-            //File.WriteAllText(fileName, text);
+                //String[,] morseSave = new String[100,100];
+
+            }
+            //File.WriteAllText(morseName, text);
+            //while (exitLoop != true)
+            //{
+
+            //}
 
         }
 
-        
         private void LoadMorseBtn_Clicked(object sender, EventArgs e)
         {
-
+           
         }
 
         private void PlayMorseBtn_Clicked(object sender, EventArgs e)
@@ -51,12 +57,12 @@ namespace FlashLightApp2018
 
         private void OBtn_Clicked(object sender, EventArgs e)
         {
-            
+
         }
 
         private void LBtn_Clicked(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SBtn_Clicked(object sender, EventArgs e)
@@ -68,5 +74,6 @@ namespace FlashLightApp2018
         {
 
         }
+
     }
 }
