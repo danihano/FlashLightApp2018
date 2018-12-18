@@ -17,10 +17,46 @@ namespace FlashLightApp2018
 
         private async void OnBtn_Clicked(object sender, EventArgs e)
         {
+
             try
             {
                 //Turn on
+                //dot
                 await Flashlight.TurnOnAsync();
+                await Flashlight.TurnOffAsync();
+                //end dot
+
+                await Flashlight.TurnOnAsync();
+                await Flashlight.TurnOffAsync();
+
+                await Flashlight.TurnOnAsync();
+                await Flashlight.TurnOffAsync();
+
+                await Task.Delay(650);
+
+                //dash
+                await Flashlight.TurnOnAsync();
+                await Task.Delay(750);
+                await Flashlight.TurnOffAsync();
+                //end dash
+
+                await Flashlight.TurnOnAsync();
+                await Task.Delay(750);
+                await Flashlight.TurnOffAsync();
+
+                await Flashlight.TurnOnAsync();
+                await Task.Delay(750);
+                await Flashlight.TurnOffAsync();
+
+                await Task.Delay(650);
+                await Flashlight.TurnOnAsync();
+                await Flashlight.TurnOffAsync();
+
+                await Flashlight.TurnOnAsync();
+                await Flashlight.TurnOffAsync();
+
+                await Flashlight.TurnOnAsync();
+                await Flashlight.TurnOffAsync();
             }
             catch(FeatureNotSupportedException fnsEx)
             {
