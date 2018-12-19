@@ -4,11 +4,11 @@
              xmlns:local="clr-namespace:FlashLightApp2018"
              x:Class="FlashLightApp2018.MainPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="Gray">
         <!-- Place new controls here -->
-        <Button Text="On" x:Name="OnBtn" Clicked="OnBtn_Clicked"/>
-        <Button Text="Off" x:Name="OffBtn" Clicked="OffBtn_Clicked"/>
-        <Button Text="Morse" x:Name="MorseBtn" Clicked="MorseBtn_Clicked"/>
+        <Button Text="On" x:Name="OnBtn" Clicked="OnBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+        <Button Text="Off" x:Name="OffBtn" Clicked="OffBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+        <Button Text="Morse" x:Name="MorseBtn" Clicked="MorseBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
         <!--<Button Text="Light Strength" x:Name="LightStr" Clicked="LightStr_Clicked"/>-->
     </StackLayout>
   <!--test-->

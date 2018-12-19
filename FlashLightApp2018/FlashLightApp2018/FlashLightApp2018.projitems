@@ -30,4 +30,7 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\WallPaper.jpg" />
+  </ItemGroup>
 </Project>

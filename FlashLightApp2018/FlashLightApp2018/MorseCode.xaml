@@ -3,19 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlashLightApp2018.MorseCode">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="Gray">
             <Label Text="Morse Code Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Button Text="SOS" x:Name="SOSBtn" Clicked="SOSBtn_Clicked"/>
-            <Button Text="Hello" x:Name="HelloBtn" Clicked="HelloBtn_Clicked"/>
-            <Button Text="Warning" x:Name="WarningBtn" Clicked="WarningBtn_Clicked"/>
-            <Button Text="WOW" x:Name="WOWBtn" Clicked="WOWBtn_Clicked"/>
-            <Button Text="LOL" x:Name="LOLBtn" Clicked="LOLBtn_Clicked"/>
-            <Button Text="911" x:Name="EmergancyBtn" Clicked="EmergancyBtn_Clicked"/>
-            <Button Text="Bye" x:Name="ByeBtn" Clicked="ByeBtn_Clicked"/>
-            <Button Text="GMIT" x:Name="GMITBtn" Clicked="GMITBtn_Clicked"/>
+            <Button Text="SOS" x:Name="SOSBtn" Clicked="SOSBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="Hello" x:Name="HelloBtn" Clicked="HelloBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="Warning" x:Name="WarningBtn" Clicked="WarningBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="WOW" x:Name="WOWBtn" Clicked="WOWBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="LOL" x:Name="LOLBtn" Clicked="LOLBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="911" x:Name="EmergancyBtn" Clicked="EmergancyBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="Bye" x:Name="ByeBtn" Clicked="ByeBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="GMIT" x:Name="GMITBtn" Clicked="GMITBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
 
         </StackLayout>
     </ContentPage.Content>
