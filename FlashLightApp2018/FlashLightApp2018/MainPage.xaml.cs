@@ -17,60 +17,25 @@ namespace FlashLightApp2018
 
         private async void OnBtn_Clicked(object sender, EventArgs e)
         {
-
             try
             {
-                //Turn on
-                //dot
+                //Turn off
                 await Flashlight.TurnOnAsync();
-                await Flashlight.TurnOffAsync();
-                //end dot
-
-                await Flashlight.TurnOnAsync();
-                await Flashlight.TurnOffAsync();
-
-                await Flashlight.TurnOnAsync();
-                await Flashlight.TurnOffAsync();
-
-                await Task.Delay(650);
-
-                //dash
-                await Flashlight.TurnOnAsync();
-                await Task.Delay(750);
-                await Flashlight.TurnOffAsync();
-                //end dash
-
-                await Flashlight.TurnOnAsync();
-                await Task.Delay(750);
-                await Flashlight.TurnOffAsync();
-
-                await Flashlight.TurnOnAsync();
-                await Task.Delay(750);
-                await Flashlight.TurnOffAsync();
-
-                await Task.Delay(650);
-                await Flashlight.TurnOnAsync();
-                await Flashlight.TurnOffAsync();
-
-                await Flashlight.TurnOnAsync();
-                await Flashlight.TurnOffAsync();
-
-                await Flashlight.TurnOnAsync();
-                await Flashlight.TurnOffAsync();
             }
-            catch(FeatureNotSupportedException fnsEx)
+            catch (FeatureNotSupportedException fnsEx)
             {
                 //Handle not supported on device exception
             }
-            catch(PermissionException pEx)
+            catch (PermissionException pEx)
             {
                 //Handle permission exception
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 //Unable to turn on/off flashlight
             }
         }
+    
 
         private async void OffBtn_Clicked(object sender, EventArgs e)
         {
@@ -93,14 +58,14 @@ namespace FlashLightApp2018
             }
         }
 
-        private async void MorseBtn_Clicked(object sender, EventArgs e)
+        private void MorseBtn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MorsePage());
+            Navigation.PushAsync(new MorseCode());
         }
 
-        private void LightStr_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new LightStrength());
-        }
+        //private void LightStr_Clicked(object sender, EventArgs e)
+        //{
+        //    Navigation.PushAsync(new LightStrength());
+        //}
     }
 }
