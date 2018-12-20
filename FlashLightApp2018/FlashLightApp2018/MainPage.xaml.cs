@@ -63,6 +63,11 @@ namespace FlashLightApp2018
             Navigation.PushAsync(new MorseCode());
         }
 
+        private void InfoBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MorseInfoPage());
+        }
+
         //private void LightStr_Clicked(object sender, EventArgs e)
         //{
         //    Navigation.PushAsync(new LightStrength());

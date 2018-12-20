@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlashLightApp2018.MorseInfoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Morse code Information and explanation of how it works!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                Font="15"/>
+
+            <Label Text="Befor and iPhone or Samsung, people would only comunicated throuch Moese Code. Even tho it is over 150 years old, it is still used by radio users and sometimes by ships! There may not be any use for morse code for us now days it is still great fun to learn and some actual emergancys it can be used to signal for help."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                Font="10"/>
+            <Image Source="Assets\Images\WallPaper.jpg"/>
+            <Label Text="Morse code was invented by Samuel F.B Morse in the 1830's he first used it to transfer nubers with the code and then futher evolved it to be able to communicate words and letters."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Font="10"/>
+            <Image Source="Assets\Images\morseAlphabet.png"/>
+            <Label Text="Now this is a very easy to understand explanation of how to put your Morse code together. Basicaly get your word that you want to translate then translate letter by letter. So lets take the common 'SOS', so 'S' is ***, then 'O' is - - - and lastly again 'S' is *** . Now this simple logic is used to translate a word to morse code!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Font="10"/>
+
+            <Button Text="Test" x:Name="TestBtn" Clicked="TestBtn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
