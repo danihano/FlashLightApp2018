@@ -35,9 +35,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\morseAlphabet.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\mrMorse.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\WallPaper.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\Images\morseAlphabet.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\Images\mrMorse.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\Images\Title.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\Images\WallPaper.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MorseInfoPage.xaml">

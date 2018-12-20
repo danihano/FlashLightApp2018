@@ -13,33 +13,61 @@
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
                     <Label Text="Morse Code Page!"
                     VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="Center" Font="15" />
+                    HorizontalOptions="Center" Font="30" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
-                    <Label Text="Here are some of the most useful morse"
+                    <Label Text="Here are some of the most useful morse code, just press the button and it will play!"
                     VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="Center" Font="10" />
-                    <Label Text="code, just press the button and it will play!"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="Center" Font="10" />
+                    HorizontalOptions="Center" Font="20" />
                 </StackLayout>
+                
+                <!--SOS and Hello Button-->
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Button Text="SOS" x:Name="SOSBtn" Clicked="SOSBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-                    <Button Text="Hello" x:Name="HelloBtn" Clicked="HelloBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="SOS" x:Name="SOSBtn" Clicked="SOSBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="Hello" x:Name="HelloBtn" Clicked="HelloBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
                 </StackLayout>
+                
+                <!--Warning and WOW Button-->
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Warning" x:Name="WarningBtn" Clicked="WarningBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-                    <Button Text="WOW" x:Name="WOWBtn" Clicked="WOWBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="Warning" x:Name="WarningBtn" Clicked="WarningBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="WOW" x:Name="WOWBtn" Clicked="WOWBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
                 </StackLayout>
+                
+                <!--LOL and 911 Button-->
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Button Text="LOL" x:Name="LOLBtn" Clicked="LOLBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-                    <Button Text="911" x:Name="EmergancyBtn" Clicked="EmergancyBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="LOL" x:Name="LOLBtn" Clicked="LOLBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="911" x:Name="EmergancyBtn" Clicked="EmergancyBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
                 </StackLayout>
+                
+                <!--Bye and GMIT Button-->
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Button Text="Bye" x:Name="ByeBtn" Clicked="ByeBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-                    <Button Text="GMIT" x:Name="GMITBtn" Clicked="GMITBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="Bye" x:Name="ByeBtn" Clicked="ByeBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+                    <Button Text="GMIT" x:Name="GMITBtn" Clicked="GMITBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
+
+<!--This is the code i tryed to set up the more complicated morsecode buttons where you creat your own code, but i didnt get it working-->
+
+<!--Load Morse code and Make new morse code-->
+<!--
+            //<Button Text="New Morse" x:Name="NewMorseBtn" Clicked="NewMorseBtn_Clicked"/>
+            <Entry Placeholder="Enter Morse Name" x:Name="MorseName"/>
+            <Button Text="Load Morse" x:Name="LoadMorseBtn" Clicked="LoadMorseBtn_Clicked"/>
+
+            -->
+<!--Plase Loaded Morse Code-->
+<!--
+            <Button Text="Play Morse" x:Name="PlayMorseBtn" Clicked="PlayMorseBtn_Clicked"/>
+
+            -->
+<!--Write Morse Code-->
+<!--
+            <Button Text="o" x:Name="OBtn" Clicked="OBtn_Clicked" IsEnabled="False"/>
+            <Button Text="-" x:Name="LBtn" Clicked="LBtn_Clicked" IsEnabled="False"/>
+            <Button Text="/" x:Name="SBtn" Clicked="SBtn_Clicked" IsEnabled="False"/>
+            <Button Text="End" x:Name="EndBtn" Clicked="EndBtn_Clicked" IsEnabled="False"/>-->
+

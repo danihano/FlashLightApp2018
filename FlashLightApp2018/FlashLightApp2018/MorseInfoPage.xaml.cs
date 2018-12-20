@@ -13,29 +13,34 @@ namespace FlashLightApp2018
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MorseInfoPage : ContentPage
 	{
-		public MorseInfoPage ()
-		{
-			InitializeComponent ();
-		}
-
-        private async void TestBtn_Pressed(object sender, EventArgs e)
+        public MorseInfoPage()
         {
-            try
-            {
-                await Flashlight.TurnOnAsync();
-            }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                //Handle not supported on device exception
-            }
-            catch (PermissionException pEx)
-            {
-                //Handle permission exception
-            }
-            catch (Exception ex)
-            {
-                //Unable to turn on/off flashlight
-            }
+            InitializeComponent();
+            image1();
+            image2();
+            image3();
+
+        }
+
+        private void image1()
+        {
+            var assembly = typeof(MorseInfoPage);
+            string FileName = "FlashLightApp2018.Assets.Images.Title.png";
+            Title.Source = ImageSource.FromResource(FileName, assembly);
+        }
+
+        private void image2()
+        {
+            var assembly = typeof(MorseInfoPage);
+            string FileName = "FlashLightApp2018.Assets.Images.mrMorse.jpg";
+            mrMorse.Source = ImageSource.FromResource(FileName, assembly);
+        }
+
+        private void image3()
+        {
+            var assembly = typeof(MorseInfoPage);
+            string FileName = "FlashLightApp2018.Assets.Images.morseAlphabet.jpg";
+            morseAlphabet.Source = ImageSource.FromResource(FileName, assembly);
         }
     }
 }

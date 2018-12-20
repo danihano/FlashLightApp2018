@@ -2,15 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FlashLightApp2018"
-             x:Class="FlashLightApp2018.MainPage">
+             x:Class="FlashLightApp2018.MainPage" BackgroundColor="Gray">
 
-    <StackLayout BackgroundColor="Gray">
+    <StackLayout BackgroundColor="Gray" Orientation="Vertical">
         <!-- Place new controls here -->
-        <Button Text="On" x:Name="OnBtn" Clicked="OnBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-        <Button Text="Off" x:Name="OffBtn" Clicked="OffBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-        <Button Text="Morse" x:Name="MorseBtn" Clicked="MorseBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
-        <Button Text="Info" x:Name="InfoBtn" Clicked="InfoBtn_Clicked" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+        <Image x:Name="Title" Aspect="AspectFit" IsVisible="True"/>
         
+        <!--On and Off Button-->
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Button Text="On" x:Name="OnBtn" Clicked="OnBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="Off" x:Name="OffBtn" Clicked="OffBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+        </StackLayout>
+        
+        <!--Morse and Info Button-->
+        <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Button Text="Morse" x:Name="MorseBtn" Clicked="MorseBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+            <Button Text="Info" x:Name="InfoBtn" Clicked="InfoBtn_Clicked" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BorderColor="LightGray" BackgroundColor="Gray" BorderWidth="2" FontAttributes="Bold" BorderRadius="4"/>
+        </StackLayout>
     </StackLayout>
   <!--test-->
 </ContentPage>

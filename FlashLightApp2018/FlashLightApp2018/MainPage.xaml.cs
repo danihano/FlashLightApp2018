@@ -13,8 +13,19 @@ namespace FlashLightApp2018
         public MainPage()
         {
             InitializeComponent();
+
+            image1();
         }
 
+        //Title Image
+        private void image1()
+        {
+            var assembly = typeof(MainPage);
+            string FileName = "FlashLightApp2018.Assets.Images.Title.png";
+            Title.Source = ImageSource.FromResource(FileName, assembly);
+        }
+
+        //on button
         private async void OnBtn_Clicked(object sender, EventArgs e)
         {
             try
@@ -36,7 +47,7 @@ namespace FlashLightApp2018
             }
         }
     
-
+        //off button
         private async void OffBtn_Clicked(object sender, EventArgs e)
         {
             try
@@ -58,6 +69,7 @@ namespace FlashLightApp2018
             }
         }
 
+        //morse page  button
         private void MorseBtn_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MorseCode());
