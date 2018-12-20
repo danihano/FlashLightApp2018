@@ -13,7 +13,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" 
                 Font="10"/>
-            <Image Source="Assets\Images\WallPaper.jpg"/>
+            <Image Source="Assets\Images\mrMorse.jpg"/>
             <Label Text="Morse code was invented by Samuel F.B Morse in the 1830's he first used it to transfer nubers with the code and then futher evolved it to be able to communicate words and letters."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
@@ -24,7 +24,6 @@
                 HorizontalOptions="CenterAndExpand"
                 Font="10"/>
 
-            <Button Text="Test" x:Name="TestBtn" Clicked="TestBtn_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
